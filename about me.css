@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    border: 8px solid rgb(62, 7, 7); 
+    padding: 82px;
+    margin: 82; 
+}
+html {
+    height: 100%; 
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a {
+    background: #62091f;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #eff4fd;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.about-us {
+    text-align: center;
+    padding: 40px 20px;
+    display: inline-block;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #62091f;
+    text-decoration: double;
+    text-decoration: underline;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+.text {
+    max-width: 50%;
+    text-align: left;
+}
+.text h2 {
+    font-size: 40px;
+    color: #62091f;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.text p {
+    margin-bottom: 20px;
+    color: #171313;
+    line-height: 1.6;
+}
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: var(white);
+    background-color: var(#62091f);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    /* transition: transform 0.3s, background-color 0.3s; color 0.3s; */
+}
+.learn-more:hover {
+    background-color: #62091f;
+    transform: translateY(-10px);
+    background-color: var(white);
+    color: var(#62091f);
+}
+.about-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+/* Dropdown Menu CSS */
+.dropdown {
+    position: absolute; /* Use absolute positioning */
+    top: 20px;
+    right: 20px;
+}
+
+.dropdown-btn {
+    background-color: white; /* Change button background color */
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* Change dropdown background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    background-color: aqua;
+    color:black; /* Change text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color : gray; /* Darker blue on hover */
+    transition:  background-color 0.3s ease;;
+}
+ .dropdown-btn:active {
+    background-color: grey; /* Light gray color on click */
+    color: blue; /* Optionally change text color for better contrast */
+  }
+  
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Basic styling */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Text Styling */
+  .text {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  /* Styling the image */
+  .about-image {
+    flex: 1;
+    max-width: 45%;
+    height: auto;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .text, 
+    .about-image {
+      max-width: 100%;
+    }
+  
+    .about-image {
+      order: -1; /* Moves the image above the text */
+    }
+  }
+  

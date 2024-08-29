@@ -1,0 +1,272 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: black;
+    line-height: 1.6;
+}
+
+.portfolio-header {
+    background-color: purple;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.portfolio-header p {
+    font-size: 1.2em;
+    text-decoration: double;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 23%; 
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid purple;
+}
+
+.portfolio-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.portfolio-item p {
+    padding: 0 10px;
+    font-size: 1em;
+    color: black;
+}
+
+h4 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.closing-line {
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    color: black;
+    margin-top: 20px;
+}
+
+.closing-line a {
+    color: purple;
+    text-decoration: none;
+}
+
+.closing-line a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-footer {
+    background-color: purple;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: black;
+    line-height: 1.6;
+}
+
+.portfolio-header {
+    background-color: purple;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.portfolio-header p {
+    font-size: 1.2em;
+    text-decoration: double;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distributes space evenly */
+    gap:10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* .portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 23%; 
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+} */
+.portfolio-item {
+    flex: 1 1 calc(50% - 20px); /* Flex item to take half of the row with some gap */
+    box-sizing: border-box;
+    background: #f9f9f9; /* Optional: background color for better visibility */
+    padding: 10px;
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    transition: transform 0.3s; /* Optional: hover effect */
+  }
+
+.portfolio-item img {
+   max-width:100%;
+    height: auto;
+    border-bottom: 2px solid purple;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.portfolio-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.portfolio-item p {
+    padding: 0 10px;
+    font-size: 1em;
+    color: black;
+}
+
+h4 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.closing-line {
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    color: black;
+    margin-top: 20px;
+}
+
+.closing-line a {
+    color: purple;
+    text-decoration: none;
+}
+
+.closing-line a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-footer {
+    background-color: purple;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Dropdown Menu CSS */
+.dropdown {
+    position: absolute; /* Use absolute positioning */
+    top: 20px;
+    right: 20px;
+}
+
+.dropdown-btn {
+    background-color: white; /* Change button background color */
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover {
+    background-color: white; /* Darker blue on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* Change dropdown background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color:black; /* Change text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color :purple; /* Darker blue on hover */
+    transition:  background-color 0.3s ease;;
+}
+ .dropdown-btn:active {
+    background-color: grey; /* Light gray color on click */
+    color: blue; /* Optionally change text color for better contrast */
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .portfolio-item {
+      flex: 1 1 calc(25% - 20px); /* Four items per row on larger screens */
+    }
+  }
+  
+  /* Media query for smaller screens (like mobile) */
+  @media (max-width: 768px) {
+    .portfolio-item {
+      flex: 1 1 calc(50% - 10px); /* Two items per row on mobile */
+    }
+  }
